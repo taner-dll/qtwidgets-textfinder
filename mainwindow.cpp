@@ -23,7 +23,12 @@ void MainWindow::on_pushButton_clicked()
 {
      QString searchString = ui->lineEdit->text();
      //qDebug() << searchString;
+
+     //girilen ifadeyi ara
      ui->textEdit->find(searchString, QTextDocument::FindCaseSensitively);
+
+     //sadece kelimelerde ara
+     //ui->textEdit->find(searchString, QTextDocument::FindWholeWords);
 
 
 }
